@@ -12,7 +12,7 @@ const BlogPage = () => {
   const navigation = useNavigate();
   const { loading, setLoading, isDark } = useContext(AppContext);
   const blogId = location.pathname.split("/").at(-1);
-  const newBaseUrl = "https://codehelp-apis.vercel.app/api/";
+  const newBaseUrl = "https://codehelp-apis.vercel.app/api/get-blogs";
 
   async function fetchRelatedBlogs() {
     setLoading(true);
